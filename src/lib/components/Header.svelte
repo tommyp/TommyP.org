@@ -1,15 +1,7 @@
 <header>
-	<nav>
-		<ul>
-			<li class="logo">
-				<a href="/"> Tommy <span>Palmer</span> </a>
-			</li>
-
-			<li>
-				<a href="/about"> About </a>
-			</li>
-		</ul>
-	</nav>
+	<h1>
+		<a href="/"> Tommy <span>Palmer</span> </a>
+	</h1>
 </header>
 
 <style>
@@ -54,13 +46,11 @@
 		text-shadow: none;
 		text-transform: uppercase;
 		color: var(--highlight);
-		border: 3px solid var(--highlight);
 	}
 
 	a:hover {
 		color: var(--foreground);
 		background: var(--highlight);
-		border: 3px solid var(--highlight);
 	}
 
 	@media screen and (max-width: 1240px) {
