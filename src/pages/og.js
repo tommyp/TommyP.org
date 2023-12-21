@@ -22,11 +22,13 @@ export const GET = async ({ url }) => {
 
 	const element = toReactNode(`<style>${result.css.code}</style>${result.html}`);
 
+	const font = fs.readFileSync(Inter);
+
 	const svg = await satori(element, {
 		fonts: [
 			{
 				name: 'Inter',
-				data: Buffer.from(Inter),
+				data: font,
 				style: 'normal'
 			}
 		],
