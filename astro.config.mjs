@@ -1,10 +1,12 @@
 import { defineConfig } from 'astro/config';
-
 import svelte from '@astrojs/svelte';
+
+import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'http://tommyp.org',
-	output: 'hybrid',
-	integrations: [svelte()]
+  site: 'http://tommyp.org',
+  output: 'hybrid',
+  integrations: [svelte()],
+  adapter: vercel()
 });
